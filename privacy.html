@@ -21,8 +21,8 @@
     <h2>음성 파일</h2>
     <p>‘원본 음성 보관’을 켜지 않으면 녹음은 글자로 바꾼 직후 지워져요. 켠 경우에도 기기 안(앱 그룹 저장소)에만 저장되고, 어디로도 전송되지 않아요.</p>
 
-    <h2>서버로 정리(선택 기능)</h2>
-    <p>설정에서 ‘서버로 정리’를 켠 경우에만, 기기 안 모델을 쓸 수 없을 때 받아쓴 <strong>글자</strong>를 개발자의 서버(Cloudflare Workers)를 거쳐 Anthropic의 Claude API로 보내 정리해요.</p>
+    <h2>매끄러운 정리(선택 기능)</h2>
+    <p>‘매끄러운 정리’를 켠 경우에만(Apple Intelligence를 지원하지 않는 기기에서는 첫 실행 때 동의를 받아요), 기기 안 모델을 쓸 수 없을 때 받아쓴 <strong>글자</strong>를 개발자의 서버(Cloudflare Workers)를 거쳐 외부 AI 서비스인 Anthropic의 API로 보내 정리해요.</p>
     <ul>
       <li>보내는 것: 받아쓴 글자, 현재 날짜·시간대, 시간 관련 설정값</li>
       <li>보내지 않는 것: 음성, 이름, 연락처, 위치, 저장된 다른 항목</li>
@@ -63,8 +63,8 @@
     <h2>Audio</h2>
     <p>Unless “Keep original audio” is on, recordings are deleted right after transcription. When it’s on, audio is stored only on your device and is never uploaded.</p>
 
-    <h2>Server organizing (optional)</h2>
-    <p>Only if you turn on “Organize on server” and the on-device model is unavailable, the transcribed <strong>text</strong> is sent through the developer’s server (Cloudflare Workers) to Anthropic’s Claude API.</p>
+    <h2>Smart organizing (optional)</h2>
+    <p>Only if “Smart organizing” is on (on devices without Apple Intelligence, we ask for your consent on first launch) and the on-device model is unavailable, the transcribed <strong>text</strong> is sent through the developer’s server (Cloudflare Workers) to an external AI service, Anthropic’s API.</p>
     <ul>
       <li>Sent: the transcribed text, the current date and time zone, and your time settings</li>
       <li>Never sent: audio, names, contacts, location, or your other items</li>
