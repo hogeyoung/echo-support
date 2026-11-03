@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>에코 개인정보 처리방침 · Echo Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav><a href="index.html">← 에코 / Echo</a> · <a href="#ko">한국어</a> · <a href="#en">English</a></nav>
+
+  <article id="ko" lang="ko">
+    <h1>에코 개인정보 처리방침</h1>
+    <p class="meta">시행일: 2026년 11월 3일</p>
+    <p>에코는 말한 내용을 할 일과 일정으로 정리하는 앱이에요. 개인정보를 최소한으로 다루도록 만들었어요.</p>
+
+    <h2>기기 안에서 처리해요</h2>
+    <p>음성 인식은 가능한 경우 기기 안에서만 이루어져요. 정리(분류·날짜 해석)도 기본적으로 기기 안 모델(Apple Intelligence)과 규칙으로 해요.</p>
+
+    <h2>음성 파일</h2>
+    <p>‘원본 음성 보관’을 켜지 않으면 녹음은 글자로 바꾼 직후 지워져요. 켠 경우에도 기기 안(앱 그룹 저장소)에만 저장되고, 어디로도 전송되지 않아요.</p>
+
+    <h2>서버로 정리(선택 기능)</h2>
+    <p>설정에서 ‘서버로 정리’를 켠 경우에만, 기기 안 모델을 쓸 수 없을 때 받아쓴 <strong>글자</strong>를 개발자의 서버(Cloudflare Workers)를 거쳐 Anthropic의 Claude API로 보내 정리해요.</p>
+    <ul>
+      <li>보내는 것: 받아쓴 글자, 현재 날짜·시간대, 시간 관련 설정값</li>
+      <li>보내지 않는 것: 음성, 이름, 연락처, 위치, 저장된 다른 항목</li>
+      <li>남용 방지를 위해 설치마다 무작위로 만든 식별자를 함께 보내요. 이 식별자로는 사용자를 알아낼 수 없어요.</li>
+      <li>개발자 서버는 요청 내용을 저장하지 않아요. Anthropic의 데이터 처리는 <a href="https://www.anthropic.com/legal/privacy">Anthropic 개인정보 처리방침</a>을 따라요.</li>
+    </ul>
+
+    <h2>저장되는 정보</h2>
+    <p>할 일·일정·아이디어·메모는 기기 안에만 저장돼요. 계정, 광고 추적, 분석 도구는 쓰지 않아요. 앱을 지우면 모든 데이터가 함께 지워져요.</p>
+
+    <h2>권한</h2>
+    <ul>
+      <li>마이크·음성 인식: 받아쓰기</li>
+      <li>알림: 마감·일정 알림, 아침 브리핑, 저녁 정리</li>
+      <li>캘린더·미리 알림: 사용자가 ‘내보내기’를 누를 때만</li>
+    </ul>
+
+    <h2>어린이</h2>
+    <p>에코는 어린이를 대상으로 한 개인정보를 따로 수집하지 않아요.</p>
+
+    <h2>변경</h2>
+    <p>방침이 바뀌면 이 페이지를 고치고 시행일을 갱신해요.</p>
+
+    <h2>문의</h2>
+    <p><a href="https://github.com/hogeyoung/echo-support/issues">GitHub Issues</a>에 남겨 주세요.</p>
+  </article>
+
+  <hr>
+
+  <article id="en" lang="en">
+    <h1>Echo Privacy Policy</h1>
+    <p class="meta">Effective: November 3, 2026</p>
+    <p>Echo turns what you say into tasks and events. It’s built to handle as little personal data as possible.</p>
+
+    <h2>Processed on your device</h2>
+    <p>Speech recognition runs on your device whenever possible. Organizing (classification and date parsing) also uses the on-device model (Apple Intelligence) and rules by default.</p>
+
+    <h2>Audio</h2>
+    <p>Unless “Keep original audio” is on, recordings are deleted right after transcription. When it’s on, audio is stored only on your device and is never uploaded.</p>
+
+    <h2>Server organizing (optional)</h2>
+    <p>Only if you turn on “Organize on server” and the on-device model is unavailable, the transcribed <strong>text</strong> is sent through the developer’s server (Cloudflare Workers) to Anthropic’s Claude API.</p>
+    <ul>
+      <li>Sent: the transcribed text, the current date and time zone, and your time settings</li>
+      <li>Never sent: audio, names, contacts, location, or your other items</li>
+      <li>A random per-install identifier is included to prevent abuse. It cannot identify you.</li>
+      <li>The developer’s server does not store requests. Anthropic’s handling is governed by the <a href="https://www.anthropic.com/legal/privacy">Anthropic Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>What’s stored</h2>
+    <p>Tasks, events, ideas and notes are stored only on your device. No accounts, ad tracking or analytics. Deleting the app deletes all data.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li>Microphone & speech recognition: dictation</li>
+      <li>Notifications: deadline and event reminders, morning brief, evening review</li>
+      <li>Calendar & Reminders: only when you tap Export</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>Echo does not knowingly collect personal information from children.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, this page is updated along with the effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Please open an issue on <a href="https://github.com/hogeyoung/echo-support/issues">GitHub</a>.</p>
+  </article>
+</main>
+</body>
+</html>
